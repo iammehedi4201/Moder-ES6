@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring event</title>
+</head>
+<body>
+         <h1 onclick="alert('Hey Its me uzumaki naruto')">Allways keep chesing your dream</h1>
+
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias saepe, consequuntur alias necessitatibus quas veniam reiciendis voluptas, neque, ratione rerum ab! Quibusdam atque, numquam blanditiis laboriosam error minima voluptas iste, corrupti repudiandae deserunt omnis impedit est saepe, libero distinctio!</p>
+         <p>Explicabo enim adipisci eius officia. Sint commodi asperiores iure tenetur expedita consequatur quis, fuga maxime earum est deserunt iusto aliquid cumque sunt blanditiis! Nemo culpa cupiditate, cumque corrupti alias neque sint voluptatem fugit atque totam illo quo ea libero officiis?</p>
+         <p>Eveniet sit commodi itaque, officia doloribus quos omnis ut, nisi nemo quod earum, error fugiat voluptate temporibus at. Accusamus, rem, quod dolorum eum tempore modi voluptatum ad quis vel totam facere voluptates excepturi doloremque dolorem, saepe consequatur nihil atque officiis.</p>
+         <p>Doloremque ea quasi atque voluptatum ratione repellat nemo dignissimos reprehenderit nesciunt natus, aperiam alias aliquid autem debitis cumque ad tempore modi minus, magni qui quis quidem labore quam magnam. Cumque voluptatum minus quia suscipit laboriosam reiciendis! Illo laborum quis mollitia.</p>
+
+         <button>Click me-1</button>
+         <button>Click me-2</button>
+         <button id="thirdBotton">Click me-3</button>
+         <button id="para">Click me-4</button>
+         <button>Click me-5</button>
+          <button id="opp2">Hello</button>
+
+
+   <script>
+
+    function mehedi() 
+        {
+
+        Textbutton.innerHTML = "Hello There";
+        }
+
+    let Textbutton = document.getElementById("opp2");
+    
+    Textbutton.addEventListener("click",mehedi);
+
+  
+    function backgroundColor() 
+    {  
+         
+        document.body.style.backgroundColor ='tomato'
+
+    }
+       
+    let button = document.getElementById("thirdBotton");
+
+    // button.onclick = function () {
+        
+    //   console.log("Hello my name is mehedi hasan");
+
+    // }
+
+
+    // button.onclick = backgroundColor;
+
+    button.addEventListener("click",backgroundColor); 
+
+    function color() 
+    {
+        document.body.style.backgroundColor="blue"
+    }
+
+    let favButton = document.getElementById("para");
+
+    favButton.addEventListener("click",color);
+
+
+
+   </script>
+</body>
+</html>

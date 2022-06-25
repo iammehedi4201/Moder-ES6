@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Event Handler</title>
+</head>
+<body>
+     <div id="container">
+         <ul id="my-list">
+             <li class="item">Lorem ipsum dolor sit amet.</li>
+             <li class="item">Distinctio ducimus ratione corrupti itaque.</li>
+             <li class="item">Id exercitationem aliquam libero dicta?</li>
+             <li class="item">Vero aut illum nisi necessitatibus?</li>
+             <li class="item">Rem iusto dignissimos ea quae!</li>
+         </ul>
+
+         <button id="btn">ADD New Item</button>
+     </div>
+
+     <script>
+        
+
+          document.getElementById("btn").addEventListener("click",function (event) {
+            
+            let parent = document.getElementById("my-list");
+
+            let newItem =document.createElement("li");
+
+            newItem.innerText = "Mobile Cover";
+
+            parent.appendChild(newItem);
+
+          })
+            // let items = document.getElementsByClassName("item");
+
+            // for (let i = 0; i < items.length; i++) {
+            //     const item = items[i];
+
+            //     item.addEventListener("click",function (event) {
+                
+            //     event.target.parentNode.removeChild(event.target)
+
+            //     })
+    
+            // }
+
+            document.getElementById("my-list").addEventListener("click",function (evant) {
+                
+                console.log(this,evant.target);
+
+                evant.target.parentNode.removeChild(evant.target)
+
+            })
+
+            
+          
+          
+
+
+     </script>
+</body>
+</html>
